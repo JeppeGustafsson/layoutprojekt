@@ -74,6 +74,7 @@ body, html {
     padding-right: 8%;
     margin-right: 2px;
     max-width: 418px;
+    z-index: 2;
      
   }
   
@@ -96,7 +97,7 @@ body, html {
     bottom: 0%;
     right: 0%;
     padding-right: 1rem;
-    max-height: 50%;
+    max-height: 48%;
     z-index: 0;
     
   
