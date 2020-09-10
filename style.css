@@ -298,14 +298,13 @@ body, html {
   }
   .subsection.b article {
     background: white;
-    height: 60vh;
-    max-height: 430px;
     max-width: 350px;
     width: 100%;
     margin: 40px 10px;
     border-radius: 12px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
+    padding-bottom: 40px;
   }
   li a:active {
     opacity: 1;
