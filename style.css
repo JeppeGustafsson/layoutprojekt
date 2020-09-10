@@ -69,8 +69,8 @@ body, html {
   
   .boxtext1 {
     position: absolute;
-    top: 10%;
-    left: 15%;
+    top: 6%;
+    left: 10%;
     padding-right: 8%;
     margin-right: 2px;
     max-width: 418px;
@@ -363,6 +363,16 @@ body, html {
     }
     .subsection.c .item {
       padding: 40px;
+    }
+    .subsection.a button {
+      display: none;
+    }
+    .subsection.a .item {
+      padding: 0 5%;
+    }
+    .subsection.a {
+      padding-top: 40px;
+      min-height: 60vh;
     }
   }
   
