@@ -28,53 +28,129 @@ body, html {
   }
   
   
+    /* TOP SECTION */
   
-  /* image 2 
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
   
-  position: absolute;
-  width: 286px;
-  height: 279px;
-  left: 417px;
-  top: 265px;
-  
-  background: url(image.png);
-   */
-  
-  
-  
-  /* TOP SECTION */
-  
-  
-  .top-section {
-      
+    .top-section {
       display: grid;
       grid-template-columns: 1fr 1fr;
-  
-  }
-  
-  .box1 {
-      border: solid black;
-      background: #C7DDEA;
-      grid-auto-rows: 50vh;
-      padding: 20%;
+      grid-template-rows: 85vh;
     }
     
-  .box2 {
-      border: solid black;
+    
+    .box1 {
+      position: relative;
+      background: #C7DDEA;
+      grid-auto-rows: auto;
+      display: flex;
+    }
+    
+    .boxtext1 {
+      position: absolute;
+      top: 10%;
+      left: 15%
+       
+    }
+    
+    .fambutt {
+      position: absolute;
+      bottom: 36%;
+      left: 19%;
+    }
+    
+      /* IMAGE */
+    
+    figure {
+      display: flex;
+    }
+    
+    .famlogo {
+      position: absolute;
+      bottom: 0%;
+      right: 0%;
+      padding-right: 1rem;
+      max-height: 50%;
+      
+    
+    }
+    
+    /* BOX2 */
+    
+    .box2 {
       display: grid;
-      grid-auto-rows: 50vh;
+      grid-auto-rows: auto;
       
     }
     
-  .box2 > .up {
-      background: #F17949;
-  }
-  
-  .box2 > .down {
-      background: #FAB131;
-  }
+    .boxtext2 > p {
+      margin-bottom: -6%;
+      padding-left: 13%;
     
-  
+    }
+    
+    .box2 > .up {
+      background: #F17949;
+      position: relative;
+    }
+    
+    .box2 > .down {
+      background: #FAB131;
+      position: relative;
+    }
+    
+    .boxtext2 {
+      position: absolute;
+      top: 30%;
+      left: 33%;
+    
+    }
+    
+    .boxtext3 {
+      position: absolute;
+      top: 30%;
+      left: 33%;
+    }
+    
+    .boxtext3 > p {
+      margin-bottom: -6%;
+      padding-left: 13%;
+    
+    }
+      
+    /*  NAV SECTION incl in TOP SECTION */
+    
+    
+    .navbar {
+      font-family: 'Fira Sans', sans-serif;
+      font-size: 2rem;
+      display: flex;
+      justify-content: space-evenly; 
+      list-style-type: none;
+      margin: 0;
+      padding: 30px;
+      background: #E5E5E5;
+      
+     
+    }
+    
+    .navbar a {
+      text-decoration: none;
+       
+    }
+    
+    .navbar active:hover {
+      
+    }
+    
+    .navbar a:hover {
+      text-decoration: underline; 
+      text-decoration-color: blue;
+      background: transparent;
+      cursor: pointer;
+    
+    }
+    
   
   
   
