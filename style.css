@@ -363,7 +363,7 @@ body, html {
     letter-spacing: -0.02em;
   }
   
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 450px) {
     .bottom-section-grid {
       grid-template-columns: repeat(1, 1fr);
       grid-template-areas: 'item-4' 'item-5' 'item-6' 'item-1' 'item-2' 'item-3';
@@ -371,7 +371,7 @@ body, html {
     }
   }
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 450px) {
     .bottom-section-mini {
       display: none;
     }
@@ -383,4 +383,10 @@ body, html {
     background-color: #777574;
     width: 100%;
     height: 340px;
+  }
+
+  @media only screen and (max-width: 450px) {
+    footer {
+      height: 218px;
+    }
   }
