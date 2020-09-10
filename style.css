@@ -28,129 +28,187 @@ body, html {
   }
   
   
-    /* TOP SECTION */
+      /* TOP SECTION */
   
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
   
-    .top-section {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 85vh;
+  .top-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+  }
+  
+  
+  .box1 {
+    position: relative;
+    background: #C7DDEA;
+    grid-auto-rows: auto;
+    display: flex;
+    min-height: 85vh;
+  }
+  
+  .boxtext1 {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    padding-right: 8%;
+    margin-right: 2px;
+    max-width: 418px;
+     
+  }
+  
+  .fambutt {
+    position: absolute;
+    bottom: 36%;
+    left: 19%;
+    z-indext: 2;
+  }
+  
+    /* IMAGE */
+  
+  figure {
+    display: flex;
+  }
+  
+  .famlogo {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    padding-right: 1rem;
+    max-height: 50%;
+    z-index: 0;
+    
+  
+  }
+  
+  /* BOX2 */
+  
+  .box2 {
+    display: grid;
+    grid-auto-rows: auto;
+    min-height: 85vh;
+    
+  }
+  
+  .boxtext2 > p {
+    margin-bottom: -6%;
+    padding-left: 13%;
+  
+  }
+  
+  .box2 > .up {
+    background: #F17949;
+    position: relative;
+  }
+  
+  .box2 > .down {
+    background: #FAB131;
+    position: relative;
+  }
+  
+  .boxtext2 {
+    position: absolute;
+    top: 30%;
+    left: 33%;
+  
+  }
+  
+  .boxtext3 {
+    position: absolute;
+    top: 30%;
+    left: 33%;
+  }
+  
+  .boxtext3 > p {
+    margin-bottom: -6%;
+    padding-left: 13%;
+  
+  }
+    
+  /*  NAV SECTION incl in TOP SECTION */
+  
+  
+  .navbar {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly; 
+    list-style-type: none;
+    margin: 0;
+    padding: 30px;
+    background: #E5E5E5;
+    
+   
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #A9A19E;
+     
+  }
+  
+  
+  .navbar a:hover {
+    text-decoration: underline; 
+    text-decoration-color: blue;
+    background: transparent;
+    cursor: pointer;
+  
+  }
+  
+  @media only screen and (max-width: 950px) { 
+    nav { 
+      display: none; 
     }
-    
-    
     .box1 {
-      position: relative;
-      background: #C7DDEA;
-      grid-auto-rows: auto;
-      display: flex;
-    }
+      min-height: 90vh;
+      grid-column-start: 1;
+      grid-column-end: 3;
     
-    .boxtext1 {
-      position: absolute;
-      top: 10%;
-      left: 15%
-       
     }
-    
+    .box2 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
     .fambutt {
       position: absolute;
-      bottom: 36%;
-      left: 19%;
+      bottom: 43%;
+      left: 14%;
     }
-    
-      /* IMAGE */
-    
-    figure {
-      display: flex;
+  } 
+  
+  
+  
+  
+  @media only screen and (max-width: 450px) { 
+    nav { 
+      display: none; 
     }
-    
-    .famlogo {
-      position: absolute;
-      bottom: 0%;
-      right: 0%;
-      padding-right: 1rem;
-      max-height: 50%;
-      
+    .box1 {
+      min-height: 90vh;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  
+      .fambutt {
+        position: absolute;
+        left: 14%;
+        top: 42%;
     
     }
-    
-    /* BOX2 */
-    
+  
     .box2 {
-      display: grid;
-      grid-auto-rows: auto;
-      
+      grid-column-start: 1;
+      grid-column-end: 3;
     }
-    
-    .boxtext2 > p {
-      margin-bottom: -6%;
-      padding-left: 13%;
-    
-    }
-    
-    .box2 > .up {
-      background: #F17949;
-      position: relative;
-    }
-    
-    .box2 > .down {
-      background: #FAB131;
-      position: relative;
-    }
-    
-    .boxtext2 {
-      position: absolute;
-      top: 30%;
-      left: 33%;
-    
-    }
-    
-    .boxtext3 {
-      position: absolute;
-      top: 30%;
-      left: 33%;
-    }
-    
-    .boxtext3 > p {
-      margin-bottom: -6%;
-      padding-left: 13%;
-    
-    }
-      
-    /*  NAV SECTION incl in TOP SECTION */
-    
-    
-    .navbar {
-      font-family: 'Fira Sans', sans-serif;
-      font-size: 2rem;
-      display: flex;
-      justify-content: space-evenly; 
-      list-style-type: none;
-      margin: 0;
-      padding: 30px;
-      background: #E5E5E5;
-      
-     
-    }
-    
-    .navbar a {
-      text-decoration: none;
-       
-    }
-    
-    .navbar active:hover {
-      
-    }
-    
-    .navbar a:hover {
-      text-decoration: underline; 
-      text-decoration-color: blue;
-      background: transparent;
-      cursor: pointer;
-    
-    }
-    
+  
+  }
+  
+  
+  
+  
+  
+  
   
   
   
